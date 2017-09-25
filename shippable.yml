@@ -11,3 +11,6 @@ build:
     #Run test and code coverage and output results to the right folder
     - shippable_retry mvn install
     - cp -r target shippable/codecoverage
+after_success:
+   - mvn clean cobertura:cobertura
+   - mvn test
