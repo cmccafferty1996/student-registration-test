@@ -11,7 +11,8 @@ build:
     #Run test and code coverage and output results to the right folder
     - mvn install
     - mvn test
+    - cp -r target shippable/testresults
+    
+    post_ci:
     - cp -r target shippable/codecoverage
-   post_ci:
-   - cp -r target shippable/codecoverage
-   - mvn clean cobertura:cobertura
+    - mvn clean cobertura:cobertura
