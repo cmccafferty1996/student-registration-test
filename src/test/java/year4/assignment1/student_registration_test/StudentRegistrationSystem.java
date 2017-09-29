@@ -11,7 +11,7 @@ import year4.assignment1.student_registration_system.Course;
 import year4.assignment1.student_registration_system.Module;
 import year4.assignment1.student_registration_system.Student;
 
-public class TestStudentRegistrationSystem extends TestCase {
+public class StudentRegistrationSystem extends TestCase {
 	
 	@Test
 	public void testRegSystem (){
